@@ -1,5 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+  background-image: url(./assets/WeatherAppBackground.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
 }
 
 .App-logo {
@@ -35,4 +47,42 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#forecastTable {
+  margin-top: 40vh;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#forecastTable td, #forecastTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#forecastTable tr:nth-child(even){background-color: rgb(80, 146, 135);}
+#forecastTable th:first-child {border: 10px solid #ddd;}
+#forecastTable td:first-child {border: 10px solid #ddd;}
+
+#forecastTable tr:hover {background-color: rgb(99, 146, 80);}
+
+#forecastTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #04AA6D;
+  color: white;
+}
+
+#weatherForecast {
+  padding-top: 5vh;
+}
+
+#cityName {
+  margin-top: 5vh;
+}
+
+#dropdownMenu {
+  margin-top: 5vh;
 }
